@@ -4,8 +4,22 @@ html, body {
     margin: 0;
     font-family: 'Archivo', sans-serif;
     color: #9EB2BF;
-
 }
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+a{
+    text-decoration: none; 
+}
+
+.green-button a{
+    color: #E6E6E6;
+}
+.gray-button a{
+    color: #9EB2BF;
+}
+
 
 @font-face {
     font-family: 'Archivo Black';
@@ -14,24 +28,26 @@ html, body {
 
 
 #root{
-    width: 90vw;
+    width: 100vw;
     min-width: 360px;
-    height: 90vh;
+    height: 88.3vh;
     min-height: 640px;
     background: #1E2227;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 #content{
-    display: block;
-    margin: 0 auto;
     display: inline-flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+}
+
+.bottom{
+    bottom: 0;
+    right: 0;
+    position: fixed;
 }
 
 h1{
@@ -65,7 +81,7 @@ h1{
 }
 
 .green-button:active{
-    transform: scale(0.98);
+    transform: scale(0.96);
     background-color: #16a372;
     transition: 0.1s;
 }
@@ -82,4 +98,23 @@ h1{
     border-radius: 5px;
     padding: 7px;
     border: none;
+}
+
+.new-word{
+    font-size: 17px;
+    background-color: #2C313C;
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    padding: 4px;
+}
+
+.explanation{
+    font-size: 17px;
+    background-color: #23272E;
+    border-radius: 3px;
+    display: inline-block;
+    width: 65%;
+    padding: 4px;
 }
