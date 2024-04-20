@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Lesson</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <script>
+        function check() {
+            const correct1 = document.getElementById('correct1');
+            const correct2 = document.getElementById('correct2');
+
+            if (correct1.checked){
+                if (correct2.checked){
+                    window.location.href = './noun.html';
+                }
+            }
+        }
+    </script>
+    <div id="root">
+        <div id="content">
+            <h1 class="title" style="margin: auto auto;">Проверка знаний</h1>
+            <p class="lesson-p">
+                Что обозначает существительное во французском языке?
+            </p>
+            <form name="form_1">
+                <input type="radio" name="answer1" value="answer1" class="form_radio wrong">
+                <label for="answer1">Лицо, конкретного человека</label><br>
+                <input type="radio" name="answer1" value="answer2" class="form_radio wrong">
+                <label for="answer2">Какое то действие</label><br>
+                <input type="radio" name="answer1" value="answer3" class="form_radio" id="correct2">
+                <label for="answer3">Объект или сущность</label><br>
+            </form>
+            <p class="lesson-p">
+                Что обозначает глагол во французском языке?
+            </p>
+            <form name="form_2">
+                <input type="radio" name="answer1" value="answer1" class="form_radio wrong">
+                <label for="answer1">Объект или сущность</label><br>
+                <input type="radio" name="answer1" value="answer2" class="form_radio" id="correct1">
+                <label for="answer2">Какое либо дейтсвие</label><br>
+                <input type="radio" name="answer1" value="answer3" class="form_radio wrong">
+                <label for="answer3">Признак предмета, его состояние</label><br>
+            </form>
+            <div style="padding: 10px;" class="bottom">
+                <button class="gray-button"><a href="./pronoun.html">Назад</a></button>
+                <button class="green-button" onclick="check()">Далее</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
