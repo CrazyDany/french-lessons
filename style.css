@@ -4,6 +4,7 @@ html, body {
     margin: 0;
     font-family: 'Archivo', sans-serif;
     color: #9EB2BF;
+    background-color: #1E2227;
 }
 
 * {
@@ -37,6 +38,10 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 4px solid #2C313C;
+    width: min-content;
+    height: min-content;
+    margin: 10% auto;
 }
 
 #content{
@@ -191,4 +196,31 @@ input[type="radio"]:not(.wrong):checked + label:after {
     height: 14px;
     border-radius: 50%;
     background: #109768;
+}
+
+button.audio-button{
+    background: none;
+    border: none;
+    display: inline-block;
+}
+
+
+button.info-button{
+    background: none;
+    border: none;
+    display: inline-block;
+}
+
+button.audio-button:active{
+    .audio-icon{
+        transform: scale(0.9);
+        transition: 0.1s;
+    }
+}
+
+button.info-button:active{
+    .info-icon{
+        transform: scale(0.9);
+        transition: 0.1s;
+    }
 }
